@@ -53,15 +53,8 @@ function changeStartButton(){
     }
 }
 
-//listening to "change" event of checkboxes
-disChbox.forEach(function (item){
-    item.addEventListener("change", changeStartButton)
-})
-
-//listening to "click" event ov "levers"
-disLever.forEach(function (item){
-    item.addEventListener("click", changeStartButton)
-})
+//listening if mouse is over button to check if all checkboxes are clicked and levers have max value
+startButton.addEventListener("mouseover", changeStartButton);
 
 function startAnimation(){
     rocket.classList.add("animation");
