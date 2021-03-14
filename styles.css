@@ -1,0 +1,134 @@
+body{
+    background-color: black;
+}
+
+/* background */
+.space{
+    background-image: url("images/space.png");
+    background-size: cover;
+    width: 99vw;
+    height: 98vh;
+    margin: 0 auto;
+}
+
+/* planet area */
+.planet-area{
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25%;
+
+}
+
+/* planet position */
+.planet{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+}
+
+/* rocket position */
+#rocket {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 125px;
+    height: 125px;
+    transform: translate(120px, -150px) rotate(30deg);
+}
+
+.animation {
+    animation: mover 5s both;
+}
+
+@keyframes mover {
+    from { transform: translate(120px, -150px) rotate(30deg);}
+    to { transform: translate(1000px, -1000px) rotate(30deg);}
+}
+
+/* container  */
+.control-panel{
+    display: flex;
+    height: 50%;
+    width: 40%;
+    right: 40px;
+    bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    justify-content: center;
+    background:
+            linear-gradient(-45deg, white 25%, transparent 25%, transparent 75%, black 75%, black) 0 0,
+            linear-gradient(-45deg, black 25%, transparent 25%, transparent 75%, white 75%, white) 1em 1em,
+            linear-gradient(45deg, black 17%, transparent 17%, transparent 25%, black 25%, black 36%, transparent 36%, transparent 64%, black 64%, black 75%, transparent 75%, transparent 83%, black 83%) 1em 1em;
+    background-color: white;
+    background-size: 2em 2em;
+}
+
+/* container with buttons */
+.control-panel_inner{
+    display: flex;
+    height: 80%;
+    width: 95%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    background-color: #343434;
+
+}
+
+/* checkbox buttons position */
+.check-buttons{
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+/* range position */
+.levers{
+    display: flex;
+
+}
+
+.levers input{
+    transform: rotate(-90deg);
+    width: 80%;
+}
+
+/* top buttons position */
+.buttons{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 45%;
+}
+
+#pass{
+    border: solid whitesmoke;
+    border-radius: 15px;
+    width: 110%;
+}
+
+#ok-button{
+    background-color: #9fa88e;
+    border: solid #9fa88e;
+    border-radius: 15px;
+}
+
+#launch-button{
+    background-color: lightslategray;
+    border: solid whitesmoke;
+    border-radius: 50%;
+    color: goldenrod;
+    width: 70px;
+    height: 50px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="space">
+    <div class="planet-area">
+        <img src="images\mars.png" alt="Planet Mars" class="planet">
+        <img src="images\rocket.png" alt="Rocket" id="rocket">
+    </div>
+    <div class="control-panel">
+        <div class="control-panel_inner">
+            <form action="" method="post" class="buttons">
+                <div><input type="password" name="password" placeholder="Enter password to unlock" aria-label="Enter password to unlock" id="pass"></div>
+                <div><button id="ok-button" type="button">OK</button></div>
+            </form>
+            <div class="check-buttons">
+                <input type="checkbox" name="ch-box" aria-label="sth" disabled>
+                <input type="checkbox" name="ch-box" aria-label="sth" disabled>
+                <input type="checkbox" name="ch-box" aria-label="sth" disabled>
+                <input type="checkbox" name="ch-box" aria-label="sth" disabled>
+                <input type="checkbox" name="ch-box" aria-label="sth" disabled>
+                <input type="checkbox" name="ch-box" aria-label="sth" disabled>
+            </div>
+            <div class="levers">
+                <label><input type="range" name="lever" max="100" disabled></label>
+                <label><input type="range" name="lever" max="100" disabled></label>
+                <label><input type="range" name="lever" max="100" disabled></label>
+                <label><input type="range" name="lever" max="100" disabled></label>
+                <label><input type="range" name="lever" max="100" disabled></label>
+            </div>
+            <button type="button" id="launch-button" name="dis" disabled>Launch</button>
+        </div>
+    </div>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
